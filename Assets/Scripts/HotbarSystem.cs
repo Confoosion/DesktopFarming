@@ -74,7 +74,7 @@ public class HotbarSystem : MonoBehaviour
             
             if (slot != null)
             {
-                slot.slotIndex = i;
+                slot.slotIndex = i+2;
                 slot.hotbarSystem = this;
                 slots.Add(slot);
             }
@@ -83,20 +83,20 @@ public class HotbarSystem : MonoBehaviour
     
     private void SetupDefaultTools()
     {
-        // Slot 0: Watering Can
-        if (slots.Count > 0) 
-            slots[0].SetTool(ToolType.WateringCan, "Water", null);
+        // // Slot 0: Watering Can
+        // if (slots.Count > 0) 
+        //     slots[0].SetTool(ToolType.WateringCan, "Water", null);
         
-        // Slot 1: Scythe
-        if (slots.Count > 1) 
-            slots[1].SetTool(ToolType.Scythe, "Scythe", null);
+        // // Slot 1: Scythe
+        // if (slots.Count > 1) 
+        //     slots[1].SetTool(ToolType.Scythe, "Scythe", null);
         
         // Slots 2+: Different crop types
         for (int i = 0; i < availableCrops.Length && (i + 2) < slots.Count; i++)
         {
             if (availableCrops[i] != null)
             {
-                slots[i + 2].SetTool(ToolType.Seed, availableCrops[i].cropName, availableCrops[i]);
+                slots[i].SetTool(ToolType.Seed, availableCrops[i].cropName, availableCrops[i]);
             }
         }
     }
