@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f77e34fd0608f4ca85b33492091ebf, type: 3}
+  m_Name: Wheat
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropName: Wheat
+  growthTime: 10
+  waterInterval: 5
+  growthStages:
+  - {fileID: 21300000, guid: 6301939a4a40cb04eb4ae11b54dc14d8, type: 3}
+  - {fileID: 21300000, guid: c889a7d1e1d0c2746aaa1f858ba50c8c, type: 3}
+  - {fileID: 21300000, guid: 588b45e1e8bb9bf479f3ef3a34410968, type: 3}
+  - {fileID: 21300000, guid: 77157532b395ef04ea51696ff85c5d73, type: 3}
+  needsWaterSprite: {fileID: 0}
+  harvestValue: 10
+  seedCost: 5

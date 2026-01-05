@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f77e34fd0608f4ca85b33492091ebf, type: 3}
+  m_Name: Potato
+  m_EditorClassIdentifier: Assembly-CSharp::CropData
+  cropName: Potato
+  growthTime: 10
+  waterInterval: 5
+  growthStages:
+  - {fileID: 21300000, guid: 1f53103e2046d434dbbbc6bb3561b7d7, type: 3}
+  - {fileID: 21300000, guid: 5f6774fe4bbea6549881dca4474a0810, type: 3}
+  - {fileID: 21300000, guid: fe87b9ed74bd71249bca33afcf27ae37, type: 3}
+  - {fileID: 21300000, guid: 2f1c5b32be40cb844a3c0cf5b483dbeb, type: 3}
+  harvestValue: 10
+  seedCost: 5
